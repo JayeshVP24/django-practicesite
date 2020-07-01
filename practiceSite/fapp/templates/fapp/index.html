@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% extends "fapp/base.html" %}
+{%load static%}
+{% block body_block %}
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Welcom</h1>
+            <h2>Go to /UserPage to sign up a  for</h2>  
+            <a href="{%url 'fapp:UserPage'%}">UserPage</a><br>
+            <a href="{%url 'admin:index'%}">Admin Page</a><br>
+            <a href="{%url 'fapp:FormName'%}">Form Page</a><br>
+            <a href="{%url 'fapp:Help'%}">Help</a>
+        </div>
+    </div>  
+{% endblock body_block %}
+
+
+
+

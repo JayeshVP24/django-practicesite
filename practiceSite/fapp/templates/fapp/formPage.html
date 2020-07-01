@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% extends "fapp/base.html" %}
+{% block body_block %}
+    <div class='container'>
+        <h1>Form Page</h1>
+        <div class="jumbotron">
+            <h2>Fill the Form</h2><br>
+            <form method="POST">
+                {{form.as_p}}
+                {%csrf_token%}
+                <input type="submit" class="btn btn-primary" value='submit'>
+            </form>
+        </div>
+    </div>
+{% endblock body_block %}
+    

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% extends "fapp/base.html" %}
+{% block body_block %}
+    <div class='container'>
+        <h1>Login</h1>
+        <div class="jumbotron">
+            <form action="{% url 'fapp:UserLogin' %}" method="post">
+                {% csrf_token %}
+                <label for="username">Username: </label>
+                <input type="text" name="username" placeholder="Enter Username here">
+                <br>
+                <label for="password">Password: </label>
+                <input type="password" name="password">
+                <br>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+    </div>
+{% endblock body_block %}
+    
