@@ -25,7 +25,7 @@ SECRET_KEY = 'ecdc83!wk$p@_uu79f@lv67$uuwici$cx90a!lmeqh+4)$mi@9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['http://mrj24.pythonanywhere.com/']
 
 
 # Application definition
